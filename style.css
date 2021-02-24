@@ -39,15 +39,26 @@ body{
 
 .column {
   display: inline-block;
-  width: 300px;
+  width: 360px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 300px;
   border: solid #0fdb1e ;
   border-width: thin;
   border-radius: 25px;
   margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-.row{
-  text-align:center;
+.row {
+  text-align: center;
+}
+#HeaderCard1{
+  color: #0fdb1e;
+}
+#TextCard1
+{
+  color: #0fdb1e;
+  font-size: 16px;
 }
