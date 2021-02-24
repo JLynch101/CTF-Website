@@ -4,8 +4,8 @@ header[role="banner"] #logo-main {
 }
 #navbar-primary.navbar-default .navbar-nav > li > a:hover{
 color: #0fdb1e;
-  border-bottom: 4px solid #333333;
-  border-bottom-color: limegreen;
+  border-bottom: 1px solid #333333;
+  border-bottom-color: #0fdb1e;
 }
 
 #navbar-primary.navbar-default {
@@ -35,21 +35,29 @@ body{
 * {
   box-sizing: border-box;
 }
-
+.break{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 3px;
+  background-color: #0fdb1e;
+}
 
 .column {
   display: inline-block;
-  width: 360px;
+  width: 370px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 300px;
+  height: 350px;
   border: solid #0fdb1e ;
   border-width: thin;
   border-radius: 25px;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-left: 50px;
   margin-right: 50px;
+  align-items: center;
 }
 .row {
   text-align: center;
@@ -60,5 +68,6 @@ body{
 #TextCard1
 {
   color: #0fdb1e;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
 }
