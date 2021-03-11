@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>BASH BUSTER</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+
+
+<header role="banner">
+    <img id="logo-main" src="images/logo1.png" width="500" alt="logo">
+    <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">CHALLENGES</a></li>
+                    <li><a href="#">LEARNING</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">ACCOUNT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="break"></div>
+<body>
+<div class="column1">
+    <img src="images/challenge1.png"  height="50px">
+    <p id="TextCard1"> IP Address:46.101.42.133:6852<br> Username: challenge1<br>
+    Password: HDAD1323ND887 <br><br>
+        <strong>USE: ssh challenge1@46.101.42.133 -p 6852 <br>
+            ------------------------------------------------------------<br>
+            Use command "exit" to exit the SSH connection<br>
+        <p id="challengeText">"I think our first flag is somewhere in this directory, think you can find it?"</p>
+    <input type="text" id="f1input">
+    <input type="button" value="Check Flag" onclick="z()"><span id="f1"></span></strong></p>
+</div>
+</body>
+
+<div class="column1">
+    <img src="images/challenge2.png"  height="50px">
+    <p id="TextCard1"> IP Address:46.101.42.133:6753<br> Username: challenge2<br>
+        Password:Flag from last challenge <br><br>
+        <strong>USE: ssh challenge2@46.101.42.133 -p 6753 <br>
+            ------------------------------------------------------------ <br>
+            Use command "exit" to exit the SSH connection<br>
+    <p id="challengeText">"Check around to see if there are any other directories that may contain the flag?"</p>
+    <input type="text" id="f2input">
+    <input type="button" value="Check Flag" onclick="x()"><span id="f2"></span></strong></p>
+</div>
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
+<script src="js/flag.js"></script>
+</html>

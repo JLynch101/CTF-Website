@@ -59,6 +59,20 @@ body{
   margin-right: 50px;
   align-items: center;
 }
+.column1 {
+  width: 1000px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 350px;
+  border: solid #0fdb1e ;
+  border-width: thin;
+  border-radius: 25px;
+  margin-top: 70px;
+  margin-left: 450px;
+  margin-right: 50px;
+align-content: center;
+}
 .row {
   text-align: center;
 }
@@ -70,4 +84,10 @@ body{
   color: #0fdb1e;
   font-size: 15px;
   font-weight: bold;
+}
+#challengeText{
+  color: #0fdb1e;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
 }
