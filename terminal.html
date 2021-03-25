@@ -5,7 +5,9 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>BASH BUSTER</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="node_modules/xterm/lib/xterm.js"></script>
 
 </head>
 
@@ -27,8 +29,8 @@
                 <ul class="nav navbar-nav">
 
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">CHALLENGES</a></li>
-                    <li><a href="terminal.html">TERMINAL</a></li>
+                    <li><a href="challenges.html">CHALLENGES</a></li>
+                    <li><a href="#">TERMINAL</a></li>
                     <li><a href="#">LEARNING</a></li>
                     <li><a href="#">SUPPORT</a></li>
                     <li><a href="#">ACCOUNT</a></li>
@@ -36,36 +38,24 @@
             </div>
         </div>
     </nav>
-</header>
+</header><!-- header role="banner" -->
 <div class="break"></div>
+
 <body>
-<div class="column1">
-    <img src="images/challenge1.png"  height="50px">
-    <p id="TextCard1"> IP Address:46.101.42.133:6852<br> Username: challenge1<br>
-    Password: HDAD1323ND887 <br><br>
-        <strong>USE: ssh challenge1@46.101.42.133 -p 6852 <br>
-            ------------------------------------------------------------<br>
-            Use command "exit" to exit the SSH connection<br>
-        <p id="challengeText">"I think our first flag is somewhere in this directory, think you can find it?"</p>
-    <input type="text" id="f1input">
-    <input type="button" value="Check Flag" onclick="z()"><span id="f1"></span></strong></p>
-</div>
-</body>
+<div id="terminal"></div>
+<script>
+    var term = new Terminal();
+    term.open(document.getElementById('terminal'));
+    term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ')
 
-<div class="column1">
-    <img src="images/challenge2.png"  height="50px">
-    <p id="TextCard1"> IP Address:46.101.42.133:6753<br> Username: challenge2<br>
-        Password:Flag from last challenge <br><br>
-        <strong>USE: ssh challenge2@46.101.42.133 -p 6753 <br>
-            ------------------------------------------------------------ <br>
-            Use command "exit" to exit the SSH connection<br>
-    <p id="challengeText">"Check around to see if there are any other directories that may contain the flag?"</p>
-    <input type="text" id="f2input">
-    <input type="button" value="Check Flag" onclick="x()"><span id="f2"></span></strong></p>
-</div>
-</body>
+    import { Terminal } from 'xterm';
 
+    const term = new Terminal();
+
+    term.open(document.getElementById('xterm-container'));
+</script>
+</body>
+<!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
-<script src="js/flag.js"></script>
 </html>
